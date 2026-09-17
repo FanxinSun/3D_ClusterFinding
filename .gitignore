@@ -1,0 +1,17 @@
+# private Claude context — never committed
+CLAUDE.md
+HANDOVER.md
+.claude/
+# data: real-derived or bulky; stays local only
+*.root
+*.csv
+*.dat
+*.pdf
+data/
+backups/
+# python environments (absolute paths baked in; they live in the pipeline tree)
+cluster_ml_env/
+test_env/
+*_env/
+.ipynb_checkpoints/
+__pycache__/
