@@ -1,5 +1,12 @@
 # ML Training Strategy for Real TPC Datasets
 
+**Status note (2026-10-07).** This document predates the simulation pipeline.
+Two of its premises are superseded: training targets now come from simulation
+truth, not from a pseudo-ground truth built on the real tracker output, and
+`hitID` in the real ntuple is a channel key, not a hardware island. The noise
+fraction estimated below is therefore not used. Kept for the record; a rewrite
+is pending.
+
 ## 1. The Core Challenge: Extreme Class Imbalance and "Needle in a Haystack" Tracking
 
 When transitioning from simulated Monte Carlo (Geant4) data to real-world detector data, the complexity of track finding increases exponentially. The analysis of our real dataset (`clusters_seeds_island_RUN_REF-0.root_ntuplizer.root`) reveals a profound class imbalance between signal and background noise.

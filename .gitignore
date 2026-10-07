@@ -9,9 +9,16 @@ HANDOVER.md
 *.pdf
 data/
 backups/
+Visualizing/
 # python environments (absolute paths baked in; they live in the pipeline tree)
 cluster_ml_env/
 test_env/
 *_env/
 .ipynb_checkpoints/
 __pycache__/
+# local-only files (never committed)
+COMMITTEE_LEDGER*.md
+*Zone.Identifier
+fable51chat.md
+docs/from_pipeline_readme_*.md
+Simulations/dataset/
